@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --font-yekan_bakh_regular: yekan_bakh_regular;
+  --font-yekan_bakh_semi_bold: yekan_bakh_semi_bold;
+  --font-yekan_bakh_extra_bold: yekan_bakh_extra_bold;
+}
+
+@font-face {
+  font-family: yekan_bakh_regular;
+  src: url("/assets/fonts/yekan_bakh_regular.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: yekan_bakh_semi_bold;
+  src: url("/assets/fonts/yekan_bakh_semi_bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: yekan_bakh_extra_bold;
+  src: url("/assets/fonts/yekan_bakh_extra_bold.woff") format("woff");
+  font-display: swap;
+}
+
+* {
+  @apply font-yekan_bakh_regular;
+}
