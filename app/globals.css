@@ -7,11 +7,12 @@
 
   --color-primary-color: #ff5023;
   --color-secondary-color: #f0f0f0;
-  --color-header-color: #F9F9F9;
+  --color-header-color: #f9f9f9;
 
   --color-primary-text-color: #212121;
   --color-secondary-text-color: #43454d;
-
+  --color-gray-color: #eaeaea;
+  --color-box: #d8d8d84f;
 }
 
 @layer utilities {
@@ -38,4 +39,21 @@
 
 * {
   @apply font-yekan_bakh_regular;
+}
+
+
+
+.swiper-wrapper {
+  padding-bottom: 2rem;
+}
+
+
+.swiper-pagination-bullet {
+  background-color: #ff4f238e !important;
+  width: 16.363636016845703px !important;
+  height: 16.363636016845703px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff5023 !important;
 }
