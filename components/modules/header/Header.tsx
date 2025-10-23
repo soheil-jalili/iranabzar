@@ -2,8 +2,8 @@ import React from "react"
 import Logo from "./Logo"
 import SearchInput from "./SearchInput"
 import LoginRegisterLikeShoppingCart from "./LoginRegisterLikeShoppingCart"
-
 import Menu from "./Menu"
+import BottomHeader from "./BottomHeader"
 
 type HeaderMainType = {
     children: React.ReactNode
@@ -11,10 +11,12 @@ type HeaderMainType = {
 
 const HeaderMain: React.FC<HeaderMainType> = ({ children }: HeaderMainType) => {
     return (
-        <header className="container py-3 md:py-8">
-            <div className="flex items-center justify-between gap-4">
+        <header>
+            <div className="container flex items-center justify-between gap-4 py-3 md:py-8">
                 {children}
             </div>
+
+            <BottomHeader  />
         </header>
     )
 }
@@ -30,6 +32,8 @@ const Header: React.FC = () => {
         </HeaderMain>
     )
 }
+
+
 
 export default Header
 
