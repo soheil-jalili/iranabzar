@@ -13,6 +13,16 @@
   --color-secondary-text-color: #43454d;
   --color-gray-color: #eaeaea;
   --color-box: #d8d8d84f;
+
+  --color-red-color: rgba(255, 80, 35, 1);
+  --color-medium-gray: rgba(129, 129, 129, 1);
+  --color-highlight-light: rgba(237, 20, 91, 0.06);
+
+  --spacing-17: 1.0625rem;
+  --spacing-1-8725: 0.468125rem;
+  --text-25: 1.5625rem;
+
+  --radius-smooth: 0.468125rem;
 }
 
 @layer utilities {
@@ -41,12 +51,9 @@
   @apply font-yekan_bakh_regular;
 }
 
-
-
 .swiper-wrapper {
   padding-bottom: 2rem;
 }
-
 
 .swiper-pagination-bullet {
   background-color: #ff4f238e !important;

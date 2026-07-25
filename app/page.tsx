@@ -1,13 +1,11 @@
-import CarouselHeader from "@/components/templates/Index/CarouselHeader"
-
+import CarouselHeader from "@/components/templates/Index/CarouselHeader";
 
 const Index: React.FC = () => {
-    return (
-        <main>
-            <CarouselHeader />
+  return (
+    <main>
+      <CarouselHeader />
+    </main>
+  );
+};
 
-        </main>
-    )
-}
-
-export default Index
+export default Index;
