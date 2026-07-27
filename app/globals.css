@@ -4,16 +4,22 @@
   --font-yekan_bakh_regular: yekan_bakh_regular;
   --font-yekan_bakh_semi_bold: yekan_bakh_semi_bold;
   --font-yekan_bakh_extra_bold: yekan_bakh_extra_bold;
+  --font-gilroy_regular: gilroy_regular;
 
   --color-primary-color: #ff5023;
   --color-secondary-color: #f0f0f0;
   --color-header-color: #f9f9f9;
+  --color-product-detail-container-color: #dedede;
+  --color-product-detail-container2-color: #f9f9f9;
+  --color-product-detail-inside-container-color: #e1e1e1;
 
   --color-primary-text-color: #212121;
   --color-secondary-text-color: #43454d;
+  --color-sub-text-color: #9c9c9c;
   --color-gray-color: #eaeaea;
   --color-box: #d8d8d84f;
   --color-gray-150: #ebebeb;
+  --color-gray-line: #dedede;
 
   --color-red-color: rgba(255, 80, 35, 1);
   --color-medium-gray: rgba(129, 129, 129, 1);
@@ -25,13 +31,17 @@
   --spacing-15-82: 0.98875rem;
 
   --text-25: 1.5625rem;
+  --text-15: 0.9375rem;
 
   --radius-smooth: 0.468125rem;
+  --radius-20: 20px;
+  --radius-15: 15px;
+  --radius-7: 7px;
 }
 
 @layer utilities {
   .container {
-    @apply mx-auto px-2;
+    @apply mx-auto max-w-[1280px] px-5;
   }
 }
 
@@ -48,6 +58,11 @@
 @font-face {
   font-family: yekan_bakh_extra_bold;
   src: url("/assets/fonts/yekan_bakh_extra_bold.woff") format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: gilroy_regular;
+  src: url("/assets/fonts/GilroyRegular.ttf") format("woff");
   font-display: swap;
 }
 
