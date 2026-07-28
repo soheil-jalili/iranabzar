@@ -1,4 +1,5 @@
 import Product from "@/components/modules/product/Product";
+import Title from "@/components/modules/title/Title";
 import CarouselHeader from "@/components/templates/Index/CarouselHeader";
 import Features from "@/components/templates/Index/Features";
 
@@ -8,6 +9,7 @@ const Index: React.FC = () => {
       <CarouselHeader />
 
       <section className="container">
+        <Title title="جدیدترین محصولات" href="/" position="right"/>
         <div className="flex items-center gap-[52px] mb-34.25">
           <Product
             title="کارواش رونیکس U100E"

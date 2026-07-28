@@ -66,8 +66,10 @@
   font-display: swap;
 }
 
-* {
-  @apply font-yekan_bakh_regular;
+@layer base {
+  body {
+    @apply font-yekan_bakh_regular;
+  }
 }
 
 .swiper-wrapper {
@@ -82,4 +84,17 @@
 
 .swiper-pagination-bullet-active {
   background-color: #ff5023 !important;
+}
+
+.title__line {
+  position: relative;
+}
+
+.title__line::after {
+  content: "";
+  position: absolute;
+  background-color: #ff502312;
+  width: 85%;
+  height: 23;
+  bottom: -8px;
 }
