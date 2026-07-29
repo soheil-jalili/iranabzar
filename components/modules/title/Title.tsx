@@ -8,16 +8,17 @@ interface Prop {
 }
 
 const Title: React.FC<Prop> = ({ title, href, position }) => {
-  const linePosition = position === "left" ? "after:left-0" : "after:right-0";
+  const linePosition =
+    position === "left" ? "after:-left-2" : "after:right-0";
   return (
     <div className="flex items-center justify-between mb-11.5">
       <p
-        className={`text-primary-color font-yekan_bakh_semi_bold title__line ${linePosition}`}
+        className={`text-xl text-primary-color font-yekan_bakh_semi_bold title__line ${linePosition}`}
       >
         {title}
       </p>
 
-      <Link href={href} className="flex items-center gap-1.5">
+      <Link href={href} className="flex items-center gap-1.5 text-xl">
         <p className="text-primary-color font-yekan_bakh_semi_bold">
           مشاهده همه
         </p>
