@@ -16,7 +16,7 @@
   --color-best-seller-container-color: rgba(255, 93, 66, 1);
   --color-white-94-color: rgba(255, 255, 255, 0.94);
   --color-border-see-all-color: rgba(216, 216, 216, 0.31);
-  
+
   --color-primary-text-color: #212121;
   --color-secondary-text-color: #43454d;
   --color-sub-text-color: #9c9c9c;
@@ -29,6 +29,10 @@
   --color-medium-gray: rgba(129, 129, 129, 1);
   --color-highlight-light: rgba(237, 20, 91, 0.06);
 
+  --color-latest-products-first-container: rgba(255, 154, 46, 1);
+
+  --color-btn-text-color: rgba(255, 154, 46, 1);
+
   --spacing-17: 1.0625rem;
   --spacing-1-8725: 0.468125rem;
   --spacing-12-63: 0.789375rem;
@@ -36,7 +40,7 @@
 
   --text-25: 1.5625rem;
   --text-15: 0.9375rem;
- --text-38: 2.375rem;
+  --text-38: 2.375rem;
 
   --radius-smooth: 0.468125rem;
   --radius-20: 20px;
@@ -44,11 +48,13 @@
   --radius-7: 7px;
   --radius-6: 6px;
   --radius-34: 34px;
+
+  --leading-45: 1.45;
 }
 
 @layer utilities {
   .container {
-    @apply mx-auto max-w-[1280px] px-5;
+    @apply mx-auto max-w-[1271px] px-5;
   }
 }
 

@@ -1,34 +1,13 @@
 import Product from "@/components/modules/product/Product";
-import Image from "next/image";
-import Link from "next/link";
+import Title from "@/components/modules/title/Title";
 import React from "react";
 
-const BestSellersSection: React.FC = () => {
+const LatestProducts: React.FC = () => {
   return (
-    <section className="container bg-best-seller-container-color rounded-34 mb-26">
-      <div className="relative px-14.25 pb-14.25">
-        <div>
-          <h2 className="font-yekan_bakh_bold text-38 text-white pt-10.75 pb-9.75">
-            پرفروشترین اره برقی ها
-          </h2>
-          <Link
-            href={""}
-            className="inline-block py-1.5 px-5 border-3 border-border-see-all-color mb-14.25 text-xl text-primary-color bg-white-94-color rounded-6 font-yekan_bakh_bold"
-          >
-            مشاهده همه محصولات
-          </Link>
-        </div>
+    <section className="container">
+      <Title title="جدیدترین محصولات" href="/" position="left" />
 
-        <Image
-          src={"/assets/images/chainsaw-best-seller.png"}
-          alt="chainsaw"
-          width={687}
-          height={456}
-          className="absolute left-0 -top-32"
-        />
-      </div>
-
-      <div className="flex items-center justify-between pb-15.5 px-14.25">
+      <div className="flex items-center justify-between mb-15">
         <Product
           title="کارواش رونیکس U100E"
           description="ronix 2211 impact drill"
@@ -62,4 +41,4 @@ const BestSellersSection: React.FC = () => {
   );
 };
 
-export default BestSellersSection;
+export default LatestProducts;
