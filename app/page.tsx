@@ -1,3 +1,4 @@
+import AmazingDiscountSection from "@/components/templates/Index/AmazingDiscountSection";
 import BestSellerProducts from "@/components/templates/Index/BestSellerProducts";
 import BestSellersProductSection from "@/components/templates/Index/BestSellersProductSection";
 import CarouselHeader from "@/components/templates/Index/CarouselHeader";
@@ -9,6 +10,7 @@ const Index: React.FC = () => {
   return (
     <main>
       <CarouselHeader />
+      <AmazingDiscountSection />
       <LatestProducts />
       <LatestProductSection />
       <BestSellerProducts />

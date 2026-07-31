@@ -7,6 +7,12 @@ interface Prop {
   title: string;
   description: string;
   price: number;
+  textColorClassName?: string;
+  bgInsideContainerColorClassName?: string;
+  descriptionColorClassName?: string;
+  lineHorizentalBorderTopColorClassName?: string;
+  priceSectionColorClassname?: string;
+  buttonBackgroundColor?: string;
 }
 
 const Product: React.FC<Prop> = ({
@@ -15,22 +21,36 @@ const Product: React.FC<Prop> = ({
   title,
   description,
   price,
+  textColorClassName = "text-primary-text-color",
+  bgInsideContainerColorClassName = "bg-product-detail-inside-container-color",
+  descriptionColorClassName = "text-sub-text-color",
+  lineHorizentalBorderTopColorClassName = "border-t-gray-line",
+  priceSectionColorClassname = "text-primary-text-color",
+  buttonBackgroundColor = "bg-primary-color",
 }) => {
   return (
     <div
       className={`${backgroundColor} w-[271px] h-[431px] pt-4.75 px-5 pb-7 rounded-20 flex justify-between flex-col`}
     >
       <div>
-        <div className="bg-product-detail-inside-container-color mb-5.75 rounded-15 flex items-center justify-center h-[181px]">
+        <div
+          className={`${bgInsideContainerColorClassName} mb-5.75 rounded-15 flex items-center justify-center h-[181px]`}
+        >
           <Image src={image} alt={title} width={236} height={118} />
         </div>
 
-        <p className="font-yekan_bakh_semi_bold text-xl mb-1.75 text-primary-text-color">
+        <p
+          className={`font-yekan_bakh_semi_bold text-xl mb-1.75 ${textColorClassName}`}
+        >
           {title}
         </p>
-        <p className="text-sub-text-color font-gilroy_regular">{description}</p>
+        <p className={`${descriptionColorClassName} font-gilroy_regular`}>
+          {description}
+        </p>
 
-        <div className="flex items-center justify-between pt-4 pb-4.75">
+        <div
+          className={`flex items-center justify-between pt-4 pb-4.75 ${priceSectionColorClassname}`}
+        >
           <p className="font-yekan_bakh_semi_bold text-xl">قیمت:</p>
           <p className="font-yekan_bakh_semi_bold text-xl">
             {Intl.NumberFormat("fa-IR")
@@ -39,8 +59,12 @@ const Product: React.FC<Prop> = ({
           </p>
         </div>
       </div>
-      <div className="mx-6.25 border-t border-t-gray-line pt-4.75">
-        <button className="w-full flex items-center justify-center gap-2.5 bg-primary-color py-2 rounded-7 cursor-pointer">
+      <div
+        className={`mx-6.25 border-t ${lineHorizentalBorderTopColorClassName}  pt-4.75`}
+      >
+        <button
+          className={`w-full flex items-center justify-center gap-2.5 ${buttonBackgroundColor} py-2 rounded-7 cursor-pointer`}
+        >
           <svg
             width="18"
             height="18"
